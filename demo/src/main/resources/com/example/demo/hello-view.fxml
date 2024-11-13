@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.canvas.Canvas?>
+
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.VBox?>
+<AnchorPane fx:id="anchorPane" xmlns:fx="http://javafx.com/fxml" fx:controller="com.example.demo.HelloController">
+  <Canvas fx:id="canvas" layoutX="250.0" layoutY="0" width="950" height="800" AnchorPane.rightAnchor="0.0"/>
+  <TextField fx:id="inputField" layoutX="10.0" layoutY="10.0" promptText="Введите функцию"/>
+  <Button fx:id="submitButton" layoutX="200.0" layoutY="10.0" text="Отобразить"/>
+  <Button fx:id="zoomInButton" layoutX="10.0" layoutY="50.0" text="+"/>
+  <Button fx:id="zoomOutButton" layoutX="50.0" layoutY="50.0" text="-"/>
+  <ScrollPane fx:id="functionListScrollPane" layoutX="10.0" layoutY="100.0" prefWidth="200.0" prefHeight="600.0">
+    <VBox fx:id="functionList" />
+  </ScrollPane>
+</AnchorPane>
